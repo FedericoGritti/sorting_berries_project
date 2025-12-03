@@ -1,0 +1,104 @@
+
+================================================================================
+                    MOTION CONTROL COMPARISON REPORT
+================================================================================
+
+JOINT SPACE TRAJECTORY CONTROL
+--------------------------------------------------------------------------------
+  execution_time.......................... 38.073665
+  total_steps............................. 2000
+  avg_error............................... 0.221694
+  max_error............................... 0.646016
+  final_error............................. 0.000000
+  std_error............................... 0.180399
+  path_length............................. 9.243285
+  smoothness_avg_accel.................... 0.000217
+  smoothness_std_accel.................... 0.000106
+  avg_step_time........................... 0.019037
+
+================================================================================
+RESOLVED-RATE MOTION CONTROL
+--------------------------------------------------------------------------------
+  execution_time.......................... 89.181647
+  total_steps............................. 7994
+  avg_error............................... 0.113506
+  max_error............................... 0.655966
+  final_error............................. 0.030332
+  std_error............................... 0.109673
+  path_length............................. 7.874057
+  smoothness_avg_accel.................... 0.000021
+  smoothness_std_accel.................... 0.000221
+  avg_step_time........................... 0.011156
+
+================================================================================
+COMPARATIVE ANALYSIS
+--------------------------------------------------------------------------------
+
+EXECUTION TIME:
+  Joint Space:........... 38.073665
+  Resolved Rate:......... 89.181647
+  Difference:............ 51.107982
+  Percent Change:........ 134.23% ✓ Joint Space is BETTER
+
+TOTAL STEPS:
+  Joint Space:........... 2000.000000
+  Resolved Rate:......... 7994.000000
+  Difference:............ 5994.000000
+  Percent Change:........ 299.70% ✓ Joint Space is BETTER
+
+AVG ERROR:
+  Joint Space:........... 0.221694
+  Resolved Rate:......... 0.113506
+  Difference:............ -0.108188
+  Percent Change:........ -48.80% ✓ Resolved Rate is BETTER
+
+MAX ERROR:
+  Joint Space:........... 0.646016
+  Resolved Rate:......... 0.655966
+  Difference:............ 0.009950
+  Percent Change:........ 1.54% ✓ Joint Space is BETTER
+
+FINAL ERROR:
+  Joint Space:........... 0.000000
+  Resolved Rate:......... 0.030332
+  Difference:............ 0.030332
+  Percent Change:........ 7669490404.23% ✓ Joint Space is BETTER
+
+STD ERROR:
+  Joint Space:........... 0.180399
+  Resolved Rate:......... 0.109673
+  Difference:............ -0.070726
+  Percent Change:........ -39.21% ✓ Resolved Rate is BETTER
+
+PATH LENGTH:
+  Joint Space:........... 9.243285
+  Resolved Rate:......... 7.874057
+  Difference:............ -1.369229
+  Percent Change:........ -14.81% ✓ Resolved Rate is BETTER
+
+SMOOTHNESS AVG ACCEL:
+  Joint Space:........... 0.000217
+  Resolved Rate:......... 0.000021
+  Difference:............ -0.000196
+  Percent Change:........ -90.43% ✓ Resolved Rate is BETTER
+
+SMOOTHNESS STD ACCEL:
+  Joint Space:........... 0.000106
+  Resolved Rate:......... 0.000221
+  Difference:............ 0.000116
+  Percent Change:........ 109.44% ✓ Joint Space is BETTER
+
+AVG STEP TIME:
+  Joint Space:........... 0.019037
+  Resolved Rate:......... 0.011156
+  Difference:............ -0.007881
+  Percent Change:........ -41.40% ✓ Resolved Rate is BETTER
+
+================================================================================
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+  ✓ RESOLVED-RATE motion control performs better overall
+    - Wins in 3 out of 5 key metrics
+
+================================================================================
+
